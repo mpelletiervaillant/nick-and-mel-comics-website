@@ -1,0 +1,190 @@
+---
+layout: default
+title: Nick and Mel Comics
+---
+
+  <div class="wrapper relative height-100">
+    <div class="created-by-box absolute pin-right-bottom gutter-1-2 pad-t-1-2 pad-b-1-4">
+      <p class="push-0 white upper black">Created by Melany PV</p>
+    </div>
+  </div>
+
+  <div class="wrapper slide-in">
+    <div class="pad-t pad-b border-top border-btm gutter">
+      <h1 class="blue text-center push-0 upper black">Nick & Mel Comics</h1>
+    </div> 
+  </div>   
+
+  <section class="wrapper">
+    <div class="border-btm">
+      <div class="marquee relative">
+        <p class="push-0 pad-t-1-4 pad-b-1-2 absolute">Hand drawn comics of our life. | Made with Love by Mel and Nick. | Hand drawn comics of our life. | Made with Love by Mel and Nick. | Hand drawn comics of our life. | Made with Love by Mel and Nick. | Hand drawn comics of our life. | Made with Love by Mel and Nick./p>
+      </div>
+    </div>  
+<!-- 
+    <div class="grid grid-middle border-btm gutter slide-in">
+      <div class="unit xs-0 m-1-3 l-1-2 gutter grid grid-middle">
+        <div class="grid grid-middle">
+          <div class="unit xs-0 m-2-3 l-2-3">
+            <p class="push-0 blue bold tera">Read Our Comics</p>
+          </div>  
+          <div class="unit xs-0 m-1-3 l-1-3">
+            <img class="img-flex" src="{{site.baseurl}}/images/arrow.gif" alt="">
+          </div>
+        </div>
+      </div>   -->
+      <div class="grid grid-middle border-btm gutter slide-in">
+        <div class="unit xs-0 m-1-3 l-1-2 gutter vertical">
+          <p class="push-0 blue bold tera vertical">Read Our Comics <img class="img-flex w-1-2 ib vertical arrow-gif" src="{{site.baseurl}}/images/arrow.gif" alt=""></p>
+        </div>
+      <div class="unit xs-1 m-1-3 l-1-4 gutter pad-t pad-b column-2 column-height">
+        {% assign data=site.data.comics[1] %}
+        <p class="upper push-0 milli blue ">{{data.comicNumber}}</p>
+        <h4 class="push-1-4 blue">{{data.comicTitle}}</h4>
+        <p class="grey light push-1-4">{{data.shortDescription}}</p>
+        <a class="link relative bold blue ib" href="{{site.baseurl}}/{{data.url}}">Read More
+          <i class="icon i-18">
+            <img src="images/arrow-right.svg" alt="">
+          </i>
+        </a>    
+      </div>  
+      <div class="unit xs-1 m-1-3 l-1-4 gutter pad-t pad-b column-3 column-height">
+        {% assign data=site.data.comics[2] %}
+        <p class="upper push-0 milli blue">{{data.comicNumber}}</p>
+        <h4 class="push-1-4 blue">{{data.comicTitle}}</h4>
+        <p class="grey light push-1-4">{{data.shortDescription}}</p>
+        <a class="link relative bold blue ib" href="{{site.baseurl}}/{{data.url}}">Read More
+          <i class="icon i-18">
+            <img src="images/arrow-right.svg" alt="">
+          </i>
+        </a>    
+      </div>   
+    </div>
+  </section>
+
+  <section class="wrapper slide-in">
+  <div class="relative height-100">
+    <div class="read-latest-box absolute pin-left-top gutter-1-2 pad-t-1-2 pad-b-1-2">
+      <p class="push-0 white upper black ib">Latest Comic</p>
+    </div>
+  </div>
+    {% assign data=site.data.comics[0] %}
+    <h2 class="blue upper push-0 black gutter">{{data.comicTitle}}</h2>
+    <p class="grey giga light gutter banner-description">{{data.longDescription}} <a class="link relative bold blue ib" href="{{site.baseurl}}/{{data.url}}">Read More
+      <i class="icon i-18">
+        <img src="images/arrow-right.svg" alt="">
+      </i></a>
+    </p>
+ 
+    <figure class="gutter push-2">
+      <a class="image-link block" href="{{data.url}}">
+        <div class="embed embed-24by10">
+          <img class="embed-item" src="images/{{data.bannerImage}}" alt="">
+        </div>
+      </a>  
+    </figure>
+  </section>
+
+  <section class="wrapper slide-in">
+    <div class="grid grid-middle">
+      <div class="unit xs-1-2">
+        <h3 class="push-1-2 blue upper gutter">Past Comics</h3>
+      </div>
+
+      <div class="unit xs-1-2 text-right">
+        <a class="link relative bold blue" href="{{site.baseurl}}/see-all-of-them">View All Comics
+          <i class="icon i-18">
+            <img src="images/arrow-right.svg" alt="">
+          </i>
+        </a>    
+      </div>  
+    </div>  
+
+    <div class="grid grid-top border-top border-btm">
+      <div class="unit xs-1 m-1-3 gutter past-1 pad-t pad-b">
+        {% assign data=site.data.comics[3] %}
+        <figure>
+          <a class="image-link block" href="{{site.baseurl}}/{{data.url}}">
+            <div class="embed embed-4by3">
+              <img class="embed-item" src="images/{{data.thumbnailImage}}" alt="">
+            </div>
+            <div class="comic-tag gutter-1-2 pad-t-1-4 pad-b-1-4 push">
+              <p class="push-0 white upper milli bold">{{data.comicNumber}}</p>
+            </div>
+          </a>
+        </figure>
+        <h4 class="blue push-1-2">{{data.comicTitle}}</h4>
+        <p class="grey light push-1-2">{{data.shortDescription}}</p>
+        <div>
+          <a class="link relative bold blue" href="{{site.baseurl}}/{{data.url}}">Read More
+            <i class="icon i-18">
+              <img src="images/arrow-right.svg" alt="">
+            </i>
+          </a>    
+        </div>
+      </div>
+
+      <div class="unit xs-1 m-1-3 gutter past-2 pad-t pad-b">
+        {% assign data=site.data.comics[4] %}
+        <figure>
+          <a class="image-link block" href="{{site.baseurl}}/{{data.url}}">
+            <div class="embed embed-4by3">
+              <img class="embed-item" src="images/{{data.thumbnailImage}}" alt="">
+            </div>
+            <div class="comic-tag gutter-1-2 pad-t-1-4 pad-b-1-4 push">
+              <p class="push-0 white upper milli bold">{{data.comicNumber}}</p>
+            </div>
+          </a>  
+        </figure>
+        <h4 class="blue push-1-2">{{data.comicTitle}}</h4>
+        <p class="grey light push-1-2">{{data.shortDescription}}</p>
+        <div>
+          <a class="link relative bold blue ib" href="{{site.baseurl}}/{{data.url}}">Read More
+            <i class="icon i-18">
+              <img src="images/arrow-right.svg" alt="">
+            </i>
+          </a>    
+        </div>
+      </div>
+
+      <div class="unit xs-1 m-1-3 gutter past-3 pad-t pad-b">
+        {% assign data=site.data.comics[5] %}
+        <figure>
+          <a class="image-link block" href="{{site.baseurl}}/{{data.url}}">
+            <div class="embed embed-4by3">
+              <img class="embed-item" src="images/{{data.thumbnailImage}}" alt="">
+            </div>
+            <div class="comic-tag gutter-1-2 pad-t-1-4 pad-b-1-4 push">
+              <p class="push-0 white upper milli bold">{{data.comicNumber}}</p>
+            </div>
+          </a>  
+        </figure>
+        <h4 class="blue push-1-2">{{data.comicTitle}}</h4>
+        <p class="grey light push-1-2">{{data.shortDescription}}</p>
+        <div>
+          <a class="link relative bold blue ib" href="{{site.baseurl}}/{{data.url}}">Read More
+            <i class="icon i-18">
+              <img src="images/arrow-right.svg" alt="">
+            </i>
+          </a>    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="relative border-btm">
+      <div class="absolute pin-center-left nick-intro">
+        <h3 class="blue push-0">Meet Nick...</h3>
+        <p class="grey push-0">Engineerer. Serial Snacker. Loud Chewer. Video Gamer. Movie Explainer. Makes Everything Better.</p>
+      </div>  
+        <div class="portrait-video">
+        <img class="img-flex" src="{{site.baseurl}}/images/nick-and-mel-portrait.gif" alt="">
+      </div>
+      <div class="absolute pin-center-right mel-intro">
+        <h3 class="blue push-0">... and Mel</h3>
+        <p class="grey push-0">Designer. Popcorn Lover. Cardigan Wearer. Cross Stitcher. Question Asker. Also Makes Everything Better.</p>
+      </div>
+    </div>
+  </section>
+

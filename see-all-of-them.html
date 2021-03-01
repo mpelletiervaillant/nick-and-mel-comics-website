@@ -1,0 +1,38 @@
+---
+layout: interior
+title: Complete Collection of Nick and Mel Comics
+--- 
+
+  <div class="wrapper">
+    <div class="pad-t pad-b border-top border-btm gutter">
+      <h1 class="blue text-center push-0 upper black">All the Comics</h1>
+    </div> 
+  </div>   
+
+  <div class="wrapper">
+    <div class="grid grid-top">
+      {% for comic in site.data.comics %}
+      <div class="unit xs-1 m-1-3 gutter border-btm pad-b-2 pad-t-2">
+        <figure >
+          <a class="image-link block" href="{{site.baseurl}}/{{comic.url}}">
+            <div class="embed embed-4by3">
+              <img class="embed-item" src="{{site.baseurl}}/images/{{comic.thumbnailImage}}" alt="">
+            </div>
+            <div class="comic-tag gutter-1-2 pad-t-1-4 pad-b-1-4 push">
+              <p class="push-0 white upper milli bold">{{comic.comicNumber}}</p>
+            </div>
+          </a>  
+        </figure>
+        <h4 class="blue push-1-2">{{comic.comicTitle}}</h4>
+        <p class="grey light push-1-2">{{comic.shortDescription}}</p>
+        <div>
+          <a class="link relative bold blue ib" href="{{site.baseurl}}/{{comic.url}}">Read More
+            <i class="icon i-18">
+              <img src="{{site.baseurl}}/images/arrow-right.svg" alt="">
+            </i>
+          </a>      
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
