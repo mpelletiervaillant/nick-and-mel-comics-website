@@ -1,3 +1,12 @@
+- comicTitle: Harry Potter
+  comicNumber: Comic 10
+  bannerImage: comic-10/comic-10-banner.jpg
+  thumbnailImage: comic-10/comic-10-thumbnail.jpg
+  shortDescription: Nick convinces Mel to give Harry Potter another chance.
+  longDescription: Nick convinces Mel to give Harry Potter another chance.
+  url: comic-10
+  date: August 28th 2022
+
 - comicTitle: House Plants
   comicNumber: Comic 09
   bannerImage: comic-9/comic-9-banner.jpg
